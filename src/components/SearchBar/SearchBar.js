@@ -10,7 +10,7 @@ const SearchBar = ({ text, dispatch }) => {
     const onSearch = useCallback(({ target: { value } }) => {
         setSearchText(value);
         dispatch({ type: 'SET_SEARCH_TEXT', payload: value })
-    }, [])
+    }, [dispatch])
 
     return (
         <div aria-label="Search wrapper" data-testid="search" className={styles.search}>

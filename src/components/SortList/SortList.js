@@ -24,7 +24,7 @@ const SORT_OPTIONS = [
 const SortList = ({ sort, dispatch }) => {
     const onSortOptionClick = useCallback((id) => {
         dispatch({ type: "SET_SORT_OPTION", payload: id })
-    }, [])
+    }, [dispatch])
 
     return (
         <section className={styles.list} data-testid="sort-list" aria-label="sort">

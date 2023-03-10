@@ -18,6 +18,8 @@ const sortProducts = (products, sort) => {
     if (sort === 'POPULAR_FIRST') {
       return b.rating - a.rating
     }
+
+    return 0;
   })
 }
 
@@ -101,7 +103,7 @@ const ProductList = ({
 
   useEffect(() => {
     dispatch({ type: 'SET_PRODUCTS_COUNT', payload: filteredProducts.length })
-  }, [filteredProducts.length])
+  }, [filteredProducts.length, dispatch])
 
 
 

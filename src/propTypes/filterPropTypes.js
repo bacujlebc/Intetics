@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default {
+const filterPropTypes = {
     text: PropTypes.string.isRequired,
     colors: PropTypes.arrayOf(PropTypes.string).isRequired,
     minPrice: PropTypes.number.isRequired,
@@ -8,4 +8,6 @@ export default {
     sort: PropTypes.string.isRequired,
     productsCount: PropTypes.number,
     dispatch: PropTypes.func.isRequired,
-};
+}
+
+export default filterPropTypes;

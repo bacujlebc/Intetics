@@ -18,7 +18,7 @@ const COLORS = [
 const ColorFilter = ({ colors, dispatch }) => {
     const onColorSelect = useCallback((id) => {
         dispatch({ type: "SELECT_COLOR", payload: id })
-    }, [])
+    }, [dispatch])
 
     return (
         <FilterBlock label="Color">
