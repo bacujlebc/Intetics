@@ -1,0 +1,40 @@
+.productItem {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-height: 600px;
+    width: 500px;
+}
+
+.productItem h4,
+.productItem h5,
+.productItem p {
+    margin: 0;
+    padding: 0;
+}
+
+.productItem img {
+    width: 500px;
+    width: 500px;
+}
+
+.productItem .productDescription {
+    font-size: .6rem;
+    color: #757575;
+}
+
+.productAttributesRow {
+    display: flex;
+    height: 1rem;
+    width: 10rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.productAttributesRow p {
+    font-size: 0.625rem;
+}
+
+.productAttributesRow h5 {
+    text-transform: capitalize;
+}

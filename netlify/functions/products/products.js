@@ -14,7 +14,7 @@ const handler = async (event) => {
         "token": "4020e60f-388a-49b2-97c1-873b1c3d3fa9",
         "title": "Nike Air Max 97",
         "color": "black",
-        "price": 171.00,
+        "price": 165.00,
         "rating": 4.7,
         "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/59f4bcd2-13db-456c-bd82-0ade942638d4/air-max-97-shoes-h6hqBR.png"
       },
@@ -22,7 +22,7 @@ const handler = async (event) => {
         "token": "1fc7baf3-3e3e-45bf-b9c9-22d2b28edf35",
         "title": "Nike Air Max 97",
         "color": "pink",
-        "price": 172.00,
+        "price": 168.00,
         "rating": 4.7,
         "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/174c8f8a-5716-40d6-b51f-2925c6ad730d/air-max-97-shoes-mrD9xN.png"
       },
@@ -30,7 +30,7 @@ const handler = async (event) => {
         "token": "1fc7baf3-3e3e-45bf-b9c9-22d2b28edf34",
         "title": "Nike Air Max Plus",
         "color": "red",
-        "price": 173.00,
+        "price": 143.00,
         "rating": 4.7,
         "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/31e787cc-b2f0-41b6-aacb-e8776b5e49c7/air-max-plus-older-shoes-KPdnsJ.png"
       },
@@ -79,6 +79,9 @@ const handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify(products),
+      headers: {
+        "access-control-allow-origin": "*",
+      },
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,

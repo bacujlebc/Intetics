@@ -1,0 +1,6 @@
+.filterList {
+    display: flex;
+    flex-direction: column;
+    height: 19rem;
+    width: 10rem;
+}

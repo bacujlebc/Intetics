@@ -1,0 +1,16 @@
+.checkboxWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    height: 1rem;
+
+    align-items: center;
+}
+
+.checkbox {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+}
