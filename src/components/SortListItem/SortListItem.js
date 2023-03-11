@@ -16,7 +16,7 @@ const SortListItem = ({ label, activeSortOption, onClick }) => {
             className={className}
             label={label}
             onClick={onClick}
-            data-testid="sort-option_btn"
+            testId="sort-option_btn"
         />
     )
 }
