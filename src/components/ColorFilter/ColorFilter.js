@@ -2,18 +2,11 @@ import React, { useCallback, memo } from 'react';
 
 import { FilterBlock, Checkbox } from 'shared-components'
 
+import { COLORS } from './constants'
+
 import filterPropTypes from 'propTypes/filterPropTypes'
 
 import styles from './index.module.css'
-
-const COLORS = [
-    { id: 'black', label: 'Black' },
-    { id: 'red', label: 'Red' },
-    { id: 'white', label: 'White' },
-    { id: 'gray', label: 'Gray' },
-    { id: 'pink', label: 'Pink' },
-    { id: 'green', label: 'Green' },
-]
 
 const ColorFilter = ({ colors, dispatch }) => {
     const onColorSelect = useCallback((id) => {

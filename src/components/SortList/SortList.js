@@ -3,23 +3,9 @@ import React, { useCallback, memo } from 'react';
 import SortListItem from '../SortListItem/SortListItem'
 
 import filterPropTypes from 'propTypes/filterPropTypes'
+import { SORT_OPTIONS } from './constants';
 
 import styles from './index.module.css';
-
-const SORT_OPTIONS = [
-    {
-        id: 'ASC',
-        label: 'Price low to high'
-    },
-    {
-        id: 'DESC',
-        label: 'Price high to low'
-    },
-    {
-        id: 'POPULAR_FIRST',
-        label: 'Popular first'
-    },
-]
 
 const SortList = ({ sort, dispatch }) => {
     const onSortOptionClick = useCallback((id) => {

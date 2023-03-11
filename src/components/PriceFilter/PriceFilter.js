@@ -20,7 +20,7 @@ const PriceFilter = ({ minPrice, maxPrice, dispatch }) => {
 
     return (
         <>
-            <FilterBlock label="Color">
+            <FilterBlock label="Price">
                 <div style={{ display: 'flex', justifyContent: 'center', paddingLeft: 0 }}>
                     <input
                         placeholder='min'

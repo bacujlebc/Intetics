@@ -1,23 +1,26 @@
-import React, { memo } from 'react';
+import React, { memo, useReducer } from 'react';
 
 import { VSpacer } from 'shared-components'
-import { SearchBar, SortList, FilterList } from "components";
+import { SearchBar, SortList, FilterList, ProductList } from "components";
 
-import filterPropTypes from 'propTypes/filterPropTypes';
+import { reducer, initialState } from 'state-management/reducer'
 
 import styles from './index.module.css'
 
 
-const DashboardView = ({
-    renderProducts,
-    text,
-    colors,
-    minPrice,
-    maxPrice,
-    sort,
-    dispatch,
-    productsCount,
-}) => {
+const DashboardView = () => {
+    const [filters, dispatch] = useReducer(reducer, initialState);
+    const {
+        text,
+        colors,
+        price: {
+        min: minPrice,
+        max: maxPrice,
+        },
+        sort,
+        productsCount,
+    } = filters
+
 
     return (
         <main className={styles.wrapper} data-testid="dashboard-wrapper">
@@ -37,18 +40,18 @@ const DashboardView = ({
                     />
                     <div name="total-products">Total products: {productsCount}</div>
                 </section>
-                
-                {renderProducts()}
+
+                <ProductList
+                    text={text}
+                    colors={colors}
+                    minPrice={minPrice}
+                    maxPrice={maxPrice}
+                    sort={sort}
+                    dispatch={dispatch}
+                />
             </div>
-    
-          
         </main>
     )
 }
-
-DashboardView.propTypes = filterPropTypes;
-
-DashboardView.defaultProps = {
-};
 
 export default memo(DashboardView);
