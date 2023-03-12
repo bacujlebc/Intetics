@@ -16,7 +16,7 @@ const useProducts = () => {
     async function fetchProducts() {
       try {
         setLoading(true);
-        const response = await fetch(`${process.env.REACT_APP_NETLIFY_FUNCTION_URL}.netlify/functions/products`)
+        const response = await fetch(process.env.REACT_APP_NETLIFY_FUNCTION_URL)
         const products = await response.json();
         setProducts(products);
       } catch(error) {
