@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### [Demo](https://stately-hotteok-7a8813.netlify.app/)
+### [Demo](https://intetics.netlify.app/)
 
 ### Main screen
 
