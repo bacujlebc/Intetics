@@ -35,7 +35,6 @@ Button.propTypes = {
 };
   
 Button.defaultProps = {
-    func: () => {},
     label: '',
     testId: 'button',
     className: ''

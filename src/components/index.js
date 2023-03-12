@@ -7,6 +7,7 @@ import PriceFilter from './PriceFilter/PriceFilter';
 import ColorFilterItem from './ColorFilterItem/ColorFilterItem';
 import ProductList from './ProductList/ProductList';
 import ProductListItem from './ProductListItem/ProductListItem';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
 export {
     SearchBar,
@@ -18,4 +19,5 @@ export {
     ColorFilterItem,
     ProductList,
     ProductListItem,
+    ErrorBoundary,
 }
