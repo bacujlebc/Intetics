@@ -1,20 +1,11 @@
 export const SORT_ENUM = {
-    ASC: 'ASC',
-    DESC: 'DESC',
-    POPULAR_FIRST: 'POPULAR_FIRST',
+    ASC: 'Price low to high',
+    DESC: 'Price high to low',
+    POPULAR_FIRST: 'Popular first',
 }
 
 export const SORT_OPTIONS = [
-    {
-        id: SORT_ENUM.ASC,
-        label: 'Price low to high'
-    },
-    {
-        id: SORT_ENUM.DESC,
-        label: 'Price high to low'
-    },
-    {
-        id: SORT_ENUM.POPULAR_FIRST,
-        label: 'Popular first'
-    },
+    SORT_ENUM.ASC,
+    SORT_ENUM.DESC,
+    SORT_ENUM.POPULAR_FIRST,
 ]
