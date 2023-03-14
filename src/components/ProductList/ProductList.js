@@ -16,7 +16,7 @@ const useProducts = () => {
     async function fetchProducts() {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:9999/.netlify/functions/products')
+        const response = await fetch('https://intetics.netlify.app/.netlify/functions/products')
         const products = await response.json();
         setProducts(products);
       } catch(error) {

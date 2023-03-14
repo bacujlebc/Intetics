@@ -4,7 +4,7 @@ export const productList = () => cy.get('[data-testid="product-list"]');
 
 describe('template spec', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:9999/.netlify/functions/products').as('fetchProducts');
+    cy.intercept('GET', 'https://intetics.netlify.app/.netlify/functions/products').as('fetchProducts');
   });
 
   it('passes', () => {
